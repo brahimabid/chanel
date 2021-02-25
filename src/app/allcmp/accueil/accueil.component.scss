@@ -1,0 +1,79 @@
+@import "src/style/global.scss";
+@media screen and (max-width:1164px){
+    .form-control{
+        width: 55%!important;
+        display: inline;
+    }
+}
+
+@media screen and (max-width:500px){
+  
+    .left{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}
+@media (min-width:1164px){
+    .form-control{
+        width: 77%!important;
+        display: inline;
+    }
+    .left{
+        margin-left: 70px;
+        margin-top: 70px;
+    }
+}
+
+
+.sousTitre{
+    font-weight: 500;
+    margin-top: 30px;
+
+}
+.innovant{
+    color:$orange
+}
+.rechercher{
+    background-color:  $orange;
+    color:white;
+    margin-top: -5px;
+}
+
+.motcle{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.blocMotCle{
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+.row{
+       margin-right: 0px; 
+    margin-left: 0px;
+}
+hr{
+    width: 30px;
+    border: 2px solid $orange;
+    border-radius: 5px;
+}
+li{
+    list-style:none ;
+}
+.globl{
+    display: inline-flex;
+    margin-left: -20px;
+}
+.icon{
+    margin-top: 29px;
+    margin-right: 10px;
+    color: $orange;
+}
+
+.ip{
+    text-align: center;
+}
+

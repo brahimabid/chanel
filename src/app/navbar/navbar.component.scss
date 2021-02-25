@@ -1,0 +1,25 @@
+@import "src/style/global.scss";
+
+li.nav-item.active ,.navbar-nav .active>.nav-link{ 
+    
+     
+        color:$orange;
+     
+}
+.nav-item a{
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+}
+.login{
+    border: 1px solid $orange;
+    color:$orange;
+}
+.register{
+    background-color:  $orange;
+    color:white;
+    margin-left: 20px;
+}
+.navbar-toggler-icon{
+    color:black
+}

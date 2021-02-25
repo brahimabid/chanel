@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href=""><img src="assets/logo.png"></a>
+    <button  #menu class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="material-icons">menu</i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item "[routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['Accueil']">Accueil</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['Opportunités']">Opportunités</a>
+        </li>
+        <li class="nav-item "[routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['Startups']">Startups</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['Veille']">Veille</a>
+          </li>
+          <li class="nav-item "[routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['News']">News</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['M&A']">M&A</a>
+          </li>
+      
+      </ul>
+      <div orm class="form-inline my-2 my-lg-0">
+        <button class="btn login my-2 my-sm-0" type="submit">Se Connecter</button>
+        <button class="btn  register my-2 my-sm-0" type="submit">Créer Mon Compte</button>
+
+      </div>
+    </div>
+  </nav>

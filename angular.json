@@ -28,10 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/style/global.scss",
+              "node_modules/animate.css/animate.min.css"
+    
             ],
             "scripts": []
           },
+          
           "configurations": {
             "production": {
               "fileReplacements": [
