@@ -1,0 +1,37 @@
+@import "src/style/global.scss";
+
+.rechercher{
+    background-color:  $orange;
+    color:white;
+    margin-top: -5px;
+}
+.form-control{
+    width: 180px;
+    display: inline;
+
+}
+.col-md-3{
+    padding-left: 30px;
+}
+.row{
+    margin-right: 0px; 
+ margin-left: 0px;
+}
+
+li{
+    list-style: none;
+margin-bottom: 5px;
+}
+ul{
+    margin-left: -32px;
+}
+.material-icons{
+    color:$orange;
+    font-size: 14px;
+}
+a{
+    border-bottom: 1px solid black;
+}
+h3{
+    font-weight: bold;
+}

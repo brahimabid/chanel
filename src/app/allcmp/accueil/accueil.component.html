@@ -1,27 +1,24 @@
 <div class="row" style="background: url('../assets/images/1.png');">
 
     <div class="col-md-5 col-lg-5 col-sm-12 left">
-        <h1>1ère plateforme de recherche de prestataires <span class="innovant">innovants</span></h1>
+        <h1>1ère plateforme de recherche <br>de prestataires <span class="innovant">innovants</span></h1>
         <p class="sousTitre">Obtenez en moins de 3 semaines les propositions détaillées des solutions adaptées
 
             à votre besoin et discutez avec les entreprises pertinentes.</p>
         <div class="recherche">
             <input class="form-control" type="text" placeholder="Mot Clé">
-            <button class="btn rechercher">Rechercher</button>
+            <button class="btn rechercher" (click)="rechercher()">Rechercher</button>
         </div>
         <div class="blocMotCle">
-            <button class="motcle">Marketing Automation</button>
-            <button class="motcle">Sourcing de prospects</button>
-            <button class="motcle">CIRH</button>
-            <button class="motcle">CRM</button>
-            <button class="motcle">IT</button>
-            <button class="motcle">IA</button>
-            <button class="motcle">Supply Chain</button>
-
-  
-
-            <button class="motcle">Formation</button>
-            <button class="motcle">Reporting</button>
+            <button class="motcle" (click)="rechercher()">Marketing Automation</button>
+            <button class="motcle" (click)="rechercher()">Sourcing de prospects</button>
+            <button class="motcle" (click)="rechercher()">CIRH</button>
+            <button class="motcle" (click)="rechercher()">CRM</button>
+            <button class="motcle" (click)="rechercher()">IT</button>
+            <button class="motcle" (click)="rechercher()">IA</button>
+            <button class="motcle" (click)="rechercher()">Supply Chain</button>
+            <button class="motcle" (click)="rechercher()">Formation</button>
+            <button class="motcle" (click)="rechercher()">Reporting</button>
 
         </div>
     </div>
@@ -41,7 +38,7 @@
             <li>
 
                 <div class="globl">
-                    <div class="icon">
+                    <div class="iconc">
                         <i class="material-icons">check_circle_outline</i>
                     </div>
                     <div class="desc">
@@ -59,7 +56,7 @@
             <li>
 
                 <div class="globl">
-                    <div class="icon">
+                    <div class="iconc">
                         <i class="material-icons">check_circle_outline</i>
                     </div>
                     <div class="desc">
@@ -74,7 +71,7 @@
             <li>
 
                 <div class="globl">
-                    <div class="icon">
+                    <div class="iconc">
                         <i class="material-icons">check_circle_outline</i>
                     </div>
                     <div class="desc">
@@ -89,7 +86,7 @@
             <li>
 
                 <div class="globl">
-                    <div class="icon">
+                    <div class="iconc">
                         <i class="material-icons">check_circle_outline</i>
                     </div>
                     <div class="desc">
@@ -114,7 +111,7 @@
     </h1>
     <br>
     <div class="row">
-        
+
         <div class="col-md-4 ip">
             <img src="assets/images/1.svg" alt="">
             <p class="sousTitre">Durée moyenne d'une recherche</p>
@@ -138,44 +135,165 @@
 </div>
 
 
-<div class="row" style="background: url('../assets/images/slide1.png');">
-  <owl-carousel-o [options]="customOptions" style="width: 100%;">
-    <ng-template carouselSlide>
-        <div class="card">
-            <div class="card-header">
-                khkj
-            </div>
-            <div class="card-body">
-                <img src="assets/logo.png" alt="">
-            </div>
-        </div>
-    </ng-template>  
-    <ng-template carouselSlide>
-        <div class="card">
-            <div class="card-header">
-                khkj
-            </div>
-            <div class="card-body">
-                <img src="assets/logo.png" alt="">
-            </div>
-        </div>
-    </ng-template>  
-    <ng-template carouselSlide>
-        <div class="card">
-            <div class="card-header">
-                khkj
-            </div>
-            <div class="card-body">
-                <img src="assets/logo.png" alt="">
-            </div>
-        </div>
-    </ng-template>  
-  </owl-carousel-o> 
+
+<br>
+<div class="row" style="background: url('../assets/images/slide1.png');background-size:100% 100% ;
+background-repeat:no-repeat;
+height: 600px">
+<div class="tit">
+    <h1 >Quelques exemples de réalisations</h1>
+
+</div>
+    <owl-carousel-o [options]="customOptions" style="width: 80%;margin-left:10%;margin-right:10%;margin-top:50px">
+        <ng-template carouselSlide>
+
+            <img src="assets/slider/1.png" alt="">
+        </ng-template>
+
+        <ng-template carouselSlide>
+            <img src="assets/slider/2.png" alt="">
+        </ng-template>
+
+        <ng-template carouselSlide>
+            <img src="assets/slider/3.png" alt="">
+        </ng-template>
+
+
+        <ng-template carouselSlide>
+            <img src="assets/slider/4.png" alt="">
+        </ng-template>
+
+
+        <ng-template carouselSlide>
+            <img src="assets/slider/5.png" alt="">
+        </ng-template>
+
+    </owl-carousel-o>
   
 
-</div> 
+</div>
 
 <br>
+<hr>
+<h1 class="ip"> Quelques témoignages clients
+
+</h1>
 <br>
+<div class="container" style="padding-left: 100px;padding-right:100px">
+    <mat-carousel timings="250ms ease-in" timings="250ms ease-in" [autoplay]="true" maxWidth="auto" proportion="25"
+    slides="3" [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true" [useMouseWheel]="false">
+    <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index" overlayColor="#00000040"
+        [hideOverlay]="false">
+        <img src="{{slide.image}}" alt="" style="    height: 100%;    
+ width: 100%">
+
+    </mat-carousel-slide>
+    </mat-carousel>
+</div>
+
+    <br>
+
+    <hr>
+<h1 class="ip"> Quelques témoignages vidéos
+</h1>
 <br>
-<h1>sdcdsc</h1>
+
+<div class="container">
+    <iframe width="100%" height="353" src="https://www.youtube.com/embed/dkNZE1UFkUg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<iframe width="100%" height="353" src="https://www.youtube.com/embed/-JdEFwNlAYc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+<br>
+<iframe width="100%" height="353" src="https://www.youtube.com/embed/WKHXNGgJXBU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+<br>
+<iframe width="100%" height="353" src="https://www.youtube.com/embed/39iDxpyTH-U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+</div>
+
+<br>
+<hr>
+<h1 class="ip"> Quelques références
+</h1>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="assets/logo/1.jpg" class="logos">
+        </div>
+        <div class="col">
+            <img src="assets/logo/2.jpg" class="logos">
+        </div>
+        <div class="col">
+            <img src="assets/logo/3.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/4.jpg" class="logos">
+        </div>
+        <div class="col">
+            <img src="assets/logo/5.jpg" class="logos">
+        </div>
+        <div class="col">
+            <img src="assets/logo/6.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/7.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/8.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/9.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/10.jpg" class="logos">
+        </div>
+
+
+        <div class="col ">
+            <img src="assets/logo/11.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/12.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/13.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/14.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/15.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/16.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/17.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/18.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/19.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/20.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/21.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/22.jpg" class="logos">
+        </div>
+        <div class="col ">
+            <img src="assets/logo/23.jpg" alt="" class="logos">
+        </div>
+        <div class="col ">
+            <img  src="assets/logo/24.jpg" class="logos" alt="">
+        </div>
+    </div>
+</div>
+ 
+
+<br><br>
+<app-footer></app-footer>
